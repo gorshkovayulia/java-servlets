@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--    <listener>-->
+    <!--        <listener-class>servlets.listener.RequestListener</listener-class>-->
+    <!--    </listener>-->
+
+    <servlet>
+        <servlet-name>servlets.get.HelloServletGet</servlet-name>
+        <servlet-class>servlets.get.HelloServletGet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.get.HelloServletGet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.get.HelloServletGet2</servlet-name>
+        <servlet-class>servlets.get.HelloServletGet2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.get.HelloServletGet2</servlet-name>
+        <url-pattern>/hello2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.get.HelloServletGet3</servlet-name>
+        <servlet-class>servlets.get.HelloServletGet3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.get.HelloServletGet3</servlet-name>
+        <url-pattern>/hello3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.post.HelloServletPost</servlet-name>
+        <servlet-class>servlets.post.HelloServletPost</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.post.HelloServletPost</servlet-name>
+        <url-pattern>/post</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.forward.Forward</servlet-name>
+        <servlet-class>servlets.forward.Forward</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.forward.Forward</servlet-name>
+        <url-pattern>/forward</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.forward.NotFoundServlet</servlet-name>
+        <servlet-class>servlets.forward.NotFoundServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.forward.NotFoundServlet</servlet-name>
+        <url-pattern>/notfound</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.redirect.Redirect</servlet-name>
+        <servlet-class>servlets.redirect.Redirect</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.redirect.Redirect</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.session.Session</servlet-name>
+        <servlet-class>servlets.session.Session</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.session.Session</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.session.SessionWithObject</servlet-name>
+        <servlet-class>servlets.session.SessionWithObject</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.session.SessionWithObject</servlet-name>
+        <url-pattern>/person</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.cookie.SetCookieServlet</servlet-name>
+        <servlet-class>servlets.cookie.SetCookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.cookie.SetCookieServlet</servlet-name>
+        <url-pattern>/setCookie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlets.cookie.GetCookieServlet</servlet-name>
+        <servlet-class>servlets.cookie.GetCookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlets.cookie.GetCookieServlet</servlet-name>
+        <url-pattern>/getCookie</url-pattern>
+    </servlet-mapping>
+
+    <!--    <filter>-->
+    <!--        <filter-name>FilterDemo</filter-name>-->
+    <!--        <filter-class>servlets.filter.FilterDemo</filter-class>-->
+    <!--    </filter>-->
+
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>FilterDemo</filter-name>-->
+    <!--        <url-pattern>/*</url-pattern>-->
+    <!--    </filter-mapping>-->
+
+    <!--    <filter>-->
+    <!--        <filter-name>ChangeRequestFilter</filter-name>-->
+    <!--        <filter-class>servlets.filter.ChangeRequestFilter</filter-class>-->
+    <!--    </filter>-->
+
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>ChangeRequestFilter</filter-name>-->
+    <!--        <url-pattern>/hello2</url-pattern>-->
+    <!--    </filter-mapping>-->
+</web-app>
